@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="1000.0"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="sgu.atbmhttt.cipherapp.controllers.AppController">
+    <children>
+        <MenuBar prefHeight="26.0" prefWidth="1000.0">
+            <Menu mnemonicParsing="false" text="File">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Close"/>
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Delete"/>
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="About"/>
+                </items>
+            </Menu>
+        </MenuBar>
+        <TabPane layoutY="26.0" prefHeight="600.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Ceaser Cipher">
+                    <content>
+                        <fx:include source="caesar-cipher.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Substitution Cipher">
+                    <content>
+                        <fx:include source="substitution-cipher.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Vigenere">
+                    <content>
+                        <fx:include source="vigenere.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Hill">
+                    <content>
+                        <fx:include source="hill.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Playfair">
+                    <content>
+                        <fx:include source="playfair.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Apphin">
+                    <content>
+                        <fx:include source="apphin.fxml"/>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
